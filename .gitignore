@@ -1,0 +1,7 @@
+CRModuleCaller.xcodeproj/xcuserdata/
+CRModuleCaller.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+CRModuleCaller.xcodeproj/project.xcworkspace/xcuserdata/
