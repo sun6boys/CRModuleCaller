@@ -13,6 +13,7 @@
 		90FE0536224921C6000E7F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FE0535224921C6000E7F16 /* Assets.xcassets */; };
 		90FE0539224921C6000E7F16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90FE0537224921C6000E7F16 /* LaunchScreen.storyboard */; };
 		90FE053C224921C6000E7F16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE053B224921C6000E7F16 /* main.m */; };
+		90FE054522492287000E7F16 /* CRModuleCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE054422492287000E7F16 /* CRModuleCaller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,10 @@
 		90FE0538224921C6000E7F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90FE053A224921C6000E7F16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90FE053B224921C6000E7F16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90FE054322492287000E7F16 /* CRModuleCaller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRModuleCaller.h; sourceTree = "<group>"; };
+		90FE054422492287000E7F16 /* CRModuleCaller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRModuleCaller.m; sourceTree = "<group>"; };
+		90FE054922492326000E7F16 /* CRModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRModule.h; sourceTree = "<group>"; };
+		90FE054A22492377000E7F16 /* CRModuleInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRModuleInterceptor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		90FE052B224921C4000E7F16 /* CRModuleCaller */ = {
 			isa = PBXGroup;
 			children = (
+				90FE054222492273000E7F16 /* CRModuleCaller */,
 				90FE052C224921C4000E7F16 /* AppDelegate.h */,
 				90FE052D224921C4000E7F16 /* AppDelegate.m */,
 				90FE052F224921C4000E7F16 /* ViewController.h */,
@@ -69,6 +75,33 @@
 				90FE053B224921C6000E7F16 /* main.m */,
 			);
 			path = CRModuleCaller;
+			sourceTree = "<group>";
+		};
+		90FE054222492273000E7F16 /* CRModuleCaller */ = {
+			isa = PBXGroup;
+			children = (
+				90FE054822492300000E7F16 /* Module */,
+				90FE054722492300000E7F16 /* Interceptor */,
+				90FE054322492287000E7F16 /* CRModuleCaller.h */,
+				90FE054422492287000E7F16 /* CRModuleCaller.m */,
+			);
+			path = CRModuleCaller;
+			sourceTree = "<group>";
+		};
+		90FE054722492300000E7F16 /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				90FE054A22492377000E7F16 /* CRModuleInterceptor.h */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		90FE054822492300000E7F16 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				90FE054922492326000E7F16 /* CRModule.h */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90FE0531224921C4000E7F16 /* ViewController.m in Sources */,
+				90FE054522492287000E7F16 /* CRModuleCaller.m in Sources */,
 				90FE053C224921C6000E7F16 /* main.m in Sources */,
 				90FE052E224921C4000E7F16 /* AppDelegate.m in Sources */,
 			);
