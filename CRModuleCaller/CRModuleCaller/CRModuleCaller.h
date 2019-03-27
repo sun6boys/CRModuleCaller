@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "CRModule.h"
+#import "CRModuleCallBackResult.h"
+
+typedef void (^CRModuleCallBack)(CRModuleCallBackResult *result);
 
 @class CRModuleCallerBuilder;
 @interface CRModuleCaller : NSObject
@@ -17,11 +20,16 @@
 
 - (void)call;
 - (void)callAsync;
-- (void)callAsyncWithCallBackOnQueue:(dispatch_queue_t)queue callBack:(dispatch_block_t)callBack;
+- (void)callAsyncWithCallBackOnQueue:(dispatch_queue_t)queue callBack:(CRModuleCallBack)callBack;
 
 - (CRModuleCallerBuilder *)builderForModuleName:(NSString *)moduleName;
 @end
 
+@interface CRMessageContext : NSObject
+
+@property (nonatomic, copy, readonly) NSString *moduleName;
+@property (nonatomic, copy, readonly) NSString *actionName;
+@end
 
 @interface CRModuleCallerBuilder : NSObject
 
