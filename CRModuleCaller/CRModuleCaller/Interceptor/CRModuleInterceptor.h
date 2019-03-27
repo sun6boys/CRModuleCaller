@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "CRModuleMessage.h"
 
 @protocol CRModuleInterceptor <NSObject>
 
+- (BOOL)shouldCallModuleWithContext:(CRModuleMessage *)context;
 @end
 

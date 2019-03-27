@@ -15,6 +15,7 @@
 		90FE053C224921C6000E7F16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE053B224921C6000E7F16 /* main.m */; };
 		90FE054522492287000E7F16 /* CRModuleCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE054422492287000E7F16 /* CRModuleCaller.m */; };
 		D52FA2F1224B5F4B000B78BE /* CRModuleCallBackResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D52FA2F0224B5F4B000B78BE /* CRModuleCallBackResult.m */; };
+		D52FA2F5224B6972000B78BE /* CRModuleMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D52FA2F4224B6972000B78BE /* CRModuleMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		90FE054A22492377000E7F16 /* CRModuleInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRModuleInterceptor.h; sourceTree = "<group>"; };
 		D52FA2EF224B5F4B000B78BE /* CRModuleCallBackResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRModuleCallBackResult.h; sourceTree = "<group>"; };
 		D52FA2F0224B5F4B000B78BE /* CRModuleCallBackResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRModuleCallBackResult.m; sourceTree = "<group>"; };
+		D52FA2F3224B6972000B78BE /* CRModuleMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRModuleMessage.h; sourceTree = "<group>"; };
+		D52FA2F4224B6972000B78BE /* CRModuleMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRModuleMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		90FE054222492273000E7F16 /* CRModuleCaller */ = {
 			isa = PBXGroup;
 			children = (
+				D52FA2F2224B6962000B78BE /* Message */,
 				D52FA2EE224B5F33000B78BE /* CallBackResult */,
 				90FE054822492300000E7F16 /* Module */,
 				90FE054722492300000E7F16 /* Interceptor */,
@@ -115,6 +119,15 @@
 				D52FA2F0224B5F4B000B78BE /* CRModuleCallBackResult.m */,
 			);
 			path = CallBackResult;
+			sourceTree = "<group>";
+		};
+		D52FA2F2224B6962000B78BE /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D52FA2F3224B6972000B78BE /* CRModuleMessage.h */,
+				D52FA2F4224B6972000B78BE /* CRModuleMessage.m */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +204,7 @@
 				90FE0531224921C4000E7F16 /* ViewController.m in Sources */,
 				90FE054522492287000E7F16 /* CRModuleCaller.m in Sources */,
 				90FE053C224921C6000E7F16 /* main.m in Sources */,
+				D52FA2F5224B6972000B78BE /* CRModuleMessage.m in Sources */,
 				90FE052E224921C4000E7F16 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

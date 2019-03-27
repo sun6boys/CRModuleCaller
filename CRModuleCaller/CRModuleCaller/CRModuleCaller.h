@@ -25,11 +25,6 @@ typedef void (^CRModuleCallBack)(CRModuleCallBackResult *result);
 - (CRModuleCallerBuilder *)builderForModuleName:(NSString *)moduleName;
 @end
 
-@interface CRMessageContext : NSObject
-
-@property (nonatomic, copy, readonly) NSString *moduleName;
-@property (nonatomic, copy, readonly) NSString *actionName;
-@end
 
 @interface CRModuleCallerBuilder : NSObject
 
